@@ -7,7 +7,7 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
-  } 
+  }
   componentDidMount() {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
@@ -27,6 +27,11 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <ul>
+        {this.state.starwarsChars.map(char => {
+          return <li className="char">{char.name}</li>
+        })}
+      </ul>
       </div>
     );
   }

@@ -6,3 +6,9 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.char {
+  list-style-type: none;
+  boarder: 1px solid #ccc;
+  width: 40%;
+}
